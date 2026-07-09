@@ -23,11 +23,11 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 COLUMNS = [
-    "data e hora de emissao (dhEmi)",
-    "numero da nfse (nNFSe)",
-    "valor da nfse (vLiq)",
-    "cnpj do cliente (CNPJ em toma)",
-    "nome do cliente (xNome em toma)",
+    "Data e hora de emissao",
+    "Numero da nfse",
+    "Valor da nfse",
+    "CNPJ do tomador",
+    "Nome do tomador",
 ]
 
 
