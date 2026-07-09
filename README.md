@@ -136,3 +136,13 @@ Descrição dos scripts
   - A conversão de tipos é simplificada. Revise as colunas VARCHAR(255) e ajuste tamanhos conforme necessário.
   - Constraints, chaves primárias/auto-increment e índices são tratados de forma limitada: o script só lê informações de PRAGMA table_info; não recria triggers, índices compostos, foreign keys, ou outras propriedades avançadas.
   - Recomenda-se revisar manualmente o SQL gerado antes de importá-lo em um servidor MySQL.
+
+6) nfse_xml_excel.py
+- Objetivo
+  Gerar um relatório em excel de notas fiscais de serviço emitidas a partir de um diretório contendo arquivos XML no padrão nacional.
+
+- Dependências
+  argparse, html, sys, zipfile, datetime, pathlib, xml.etree.ElementTree, future (annotations)
+  
+- Uso
+  `python3 nfse_xml_excel.py /diretorio/arquivos-xml -o /tmp/relatorio.xlsx`
